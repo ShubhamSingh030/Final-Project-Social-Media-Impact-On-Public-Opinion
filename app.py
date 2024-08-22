@@ -14,7 +14,7 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier
 import shap
-
+import pickle
 # Load the data
 tweets_data = pd.read_csv('Cleaned Data/tweets_cleaned.csv')
 covid_data = pd.read_csv('Cleaned Data/covid_tweets_cleaned.csv')
