@@ -3,5 +3,5 @@ Pandas==2.2.2
 Numpy==1.25.2
 Scikit-learn==1.5.1
 SHAP==0.46.0
-Pickle version==4.0
-Matplotlib version==3.7.2
+Pickle==4.0
+Matplotlib==3.7.2
