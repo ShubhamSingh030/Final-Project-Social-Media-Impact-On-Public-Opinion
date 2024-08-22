@@ -5,3 +5,4 @@ Scikit-learn==1.5.1
 SHAP==0.46.0
 Pickle==4.0
 Matplotlib==3.7.2
+distutils
