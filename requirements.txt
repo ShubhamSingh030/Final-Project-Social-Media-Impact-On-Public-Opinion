@@ -13,6 +13,7 @@ comm==0.2.2
 contourpy==1.1.0
 cycler==0.11.0
 debugpy==1.8.1
+distutils
 decorator==5.1.1
 et-xmlfile==1.1.0
 executing==1.2.0
