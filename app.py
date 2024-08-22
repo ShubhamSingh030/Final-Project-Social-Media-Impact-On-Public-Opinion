@@ -1,10 +1,28 @@
+
+# Create the Streamlit app
+# Streamlit is an open-source app framework for machine learning and data science projects.
+
+# We can create a Streamlit app to showcase the results of the machine learning model and provide an interactive interface for users to explore the data.
+
+# Streamlit App
+# Create a Streamlit app to showcase the results of the machine learning model and provide an interactive interface for users to explore the data.
+
+# Import the required libraries
 import streamlit as st
-import pickle
 import pandas as pd
+import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.ensemble import RandomForestClassifier
+import shap
+
+# Load the data
+tweets_data = pd.read_csv('Cleaned Data/tweets_cleaned.csv')
+covid_data = pd.read_csv('Cleaned Data/covid_tweets_cleaned.csv')
+reddit_data = pd.read_csv('Cleaned Data/reddit_data_cleaned.csv')
+twitter_data = pd.read_csv('Cleaned Data/twitter_data_cleaned.csv')
 
 # Load the trained model
-with open('final_model.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Load the TF-IDF Vectorizer
@@ -33,4 +51,6 @@ if st.button("Predict"):
     input_data = preprocess_input(tweet, likes, retweets, hour)
     prediction = model.predict(input_data)
     st.write(f"Predicted Influence: {prediction[0]}")
+
+
 
