@@ -24,6 +24,7 @@ Contains cleaned Twitter texts categorized for analysis.
 
 # Goals
 # Understand User Engagement: Analyze how likes, retweets, and comments reflect public opinion.
+
 # Time-Based Analysis: Examine how sentiment or engagement changes over time.
 # Sentiment Distribution: Determine the overall sentiment in the data.
 # Text Analysis: Identify the most common words or topics in the data.
